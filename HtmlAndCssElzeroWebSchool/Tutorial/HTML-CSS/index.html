@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*
+            here write your CSS code
+            to style the div element
+            */
+            div {
+                color: blue;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            // Here write your JavaScript code
+            // to manipulate the div element
+            const div = document.querySelector("div");
+            div.style.backgroundColor = "lightblue";
+            // DOM manipulation example
+            div.addEventListener("click", function() {
+                alert("Div clicked!");
+            });
+        </script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div> this is the index page of Elzero Web School HTML and CSS course.</div>
+        <!-- This is a comment in HTML -->
+        <p>Welcome to the course!</p>
+        <p>Enjoy learning HTML and CSS.</p>
+        <!--
+            This is a comment in HTML
+            You can add comments like this
+            to explain your code or leave notes.
+            Comments will not be displayed in the browser.
+        -->
+        <!--
+                Windows: Ctrl + K + C
+                Mac: Cmd + K + C
+                Linux: Ctrl + Shift + P
+                Then type "Toggle Comment" to comment out code.
+        -->
+        <!-- <h1>Elzero Web School</h1>
+        <h2>HTML and CSS Course</h2>
+        <h3>Welcome to the Course</h3>
+        <p>This is a simple HTML page to demonstrate basic structure and styling.</p> -->
+        <!-- Headings in HTML -->
+                    <!-- <h1>Welcome</h1>
+         <h2>Welcome to Elzero Web School</h2>
+            <h3>HTML and CSS Course</h3>
+            <h4>Getting Started</h4>
+            <h5>Introduction to HTML</h5>
+            <h6>HTML Basics</h6> -->
+            <!-- 
+            h1 Toping Head
+             -->
+        <!-- <p>This is a paragraph in the HTML document.</p>
+        <p>HTML stands for HyperText Markup Language.</p>
+        <p>CSS stands for Cascading Style Sheets.</p>
+        <p>JavaScript is used to add interactivity to web pages.</p>
+        <p>Web development is fun and creative!</p>
+        <p>Learn HTML, CSS, and JavaScript to build amazing websites.</p>
+        <p>Elzero Web School offers great resources for learning web development.</p>
+        <p>Join the community and start your journey today!</p>
+        <p>Remember to practice regularly to improve your skills.</p>
+        <p>Happy coding!</p> -->
+        <!-- 
+        paragraph Is a block of text in HTML
+         -->
+        <!-- <p>HTML elements can be nested inside each other.</p>
+        <p>For example, you can have a <strong>strong</strong> element inside a <p>paragraph</p> element.</p>
+        <p>Use <em>emphasis</em> to highlight important text.</p>
+        <p>Links can be created using the <a href="https://www.elzerowebschool.com">Elzero Web School</a>.</p>
+        <br>
+        <p>Images can be added using the <br> <img src="Images/Image1.jpeg" alt="Description of image" width="450" height="230"> Image.</p>
+        <br>
+        <p>Lists can be created using <ul> for unordered lists and <ol> for ordered lists.</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+        <p>Tables can be created using the <table> element.</p>
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </table>
+        <p>Forms can be created using the <form> element.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
+        <!-- <p>Comments can be added using  comment  syntax.</p> -->
+        <!-- <p>Use the <code>code</code> element to display code snippets.</p>
+        <p>Use the <pre> element to display preformatted text.</p>
+        <pre>
+            This is preformatted text.
+            It preserves whitespace and line breaks.
+        </pre>
+        <p>Use the <blockquote> element to create block quotes.</p>
+        <blockquote>
+            This is a block quote. It is used to highlight a section of text.
+        </blockquote>
+        <p>Use the <span> element to apply styles to a part of text.</p>
+        <p>This is a <span style="color: red;">red text</span> and this is a <span style="font-weight: bold;">bold text</span>.</p>
+        <p>This is a <span style="font-style: italic;">italic text</span>.</p>
+        <p>Use the <strong> element to indicate strong importance.</p>
+        <p>Use the <em> element to indicate emphasis.</p>
+        <p>Use the <small> element to indicate small print.</p>
+        <p>Use the <mark> element to highlight text.</p>
+        <p>Use the <del> element to indicate deleted text.</p>
+        <p>Use the <ins> element to indicate inserted text.</p>
+        <p>Use the <sub> element to create subscript text.</p>
+        <p>Use the <sup> element to create superscript text.</p>
+        <p>Use the <time> element to represent a specific time.</p>
+        <p>Use the <a href="https://www.elzerowebschool.com" target="_blank">Elzero Web School</a> for more resources.</p>
+        <p>Use the <abbr title="HyperText Markup Language">HTML</abbr> abbreviation.</p>
+        <p>Use the <cite> element to reference a creative work.</p>
+        <p>Use the <dfn> element to define a term.</p>
+        <p>Use the <kbd> element to indicate keyboard input.</p>
+        <p>Use the <samp> element to represent sample output from a computer program.</p>
+        <p>Use the <var> element to represent a variable in a mathematical expression.</p>
+        <p>Use the <address> element to provide contact information.</p>
+        <p>Use the <bdi> element to isolate a span of text that might be formatted in a different direction from its surrounding text.</p>
+        <p>Use the <bdo> element to override the current text direction.</p> -->
+        <!-- <p>Use the <details> element to create a disclosure widget from which the user can obtain additional information or controls.</p> -->
+        <!-- <details>
+            <summary>More Information</summary>
+            <p>This is additional information that can be shown or hidden.</p>
+        </details>
+        <p>Use the <summary> element to provide a summary for the <details> element.</p>
+        <p>Use the <dialog> element to create a dialog box or popup.</p>
+        <dialog open>
+            <p>This is a dialog box. You can use it to display messages or get user input.</p>
+            <button onclick="this.parentElement.close()">Close</button>
+        </dialog> -->
+        <!-- <p>Use the <progress> element to display a progress bar.</p>
+        <progress value="0" max="100"></progress> -->
+
+        <!-- Global Attribute -->
+         <!-- <p class="One">Global Attribute</p>
+         <p class="Two">Global Attribute</p> -->
+         <!-- <img src="Images/Image1.jpeg" alt="This Is Image"> -->
+         <!-- <a href="https://www.ElzeroWebSchool.com" title="Visit Elzero Web School">Elzero Web School</a>
+         <audio src="audio.ad">audio</audio>
+         <video src="https://www.youtube.com">Youtube</video> -->
+         <!-- 
+         b => Bold 
+         strong => Bold => Important Text
+         i => Italic
+         em => Emphasized 
+         u => Under Line
+         Small => Smaller text
+         del => delete text
+         ins => Inserted Text
+         sub => SubScript
+         sup => SuperScript
+         -->
+            <!-- <p>This Is a <b>Bold</b> In This Paragraph</p>
+            <p>This Is <strong>Strong</strong> Text</p>
+            <p>This Is a <i>Italic</i> and <em>Emphasized</em> Text</p>
+                <p>This Is a <mark>Mark</mark></p>
+                <p>this is <u>UnderLine</u></p>
+                <p>this is <small>Text</small></p>
+                <p>This is <del>delete</del> text</p>
+                <p>This Is <ins>Insert </ins> Text</p>
+                <p>H <sub>2</sub>O and H <sup>2</sup></p> -->
+                <!-- 
+                a : Angle 
+                Create a hyperLink
+                -->
+
+                <!-- <a href="https://google.com" target="_blank" title="Go To Google">Google</a>
+                <a href="https://facebook.com" title="Go To Facebook">Facebook</a>
+                <a href="test.html" target="_blank" title="Go To Test Html">Test Html</a>
+                <p>lorem</p>
+                <a href="mailto:Khazzal@nn.sa">Contact Me</a>
+<br> -->
+<!-- 
+src : Source 
+alt : Alternitave Text
+-->
+                <!-- <img src="Images/Image1.jpeg" alt="This Is Image" width="200px">
+                <br>
+                <img src="../Html/Images/Image1.jpeg" alt="this is image">
+                <br> -->
+                <!-- 
+                Lists 
+                ul: unorder list 
+                ol: order list 
+                dl: data list 
+                li : list item
+                 -->
+                <!-- <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>
+                        JavaScript
+                        <ul>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Vue.JS</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+                <ol reversed>
+                    <li>Name</li>
+                    <li>ID</li>
+                    <li>Age</li>
+                </ol> -->
+
+                <!-- 
+                Reversed => Reverse The Ordering 
+                start => start from the position
+                type => type of order  -->
+        <!-- <ol start="100">
+
+        </ol>
+        <ol type="1"></ol>
+        <ol type="A"></ol>
+        <ol type="a"></ol>
+        <ol type="i"></ol>
+        <ol type="I"></ol> -->
+
+        <!-- Separator
+         dl :  Description List 
+         dt : Description Term
+         dd : Description Of Term-->
+         <!-- <dl>
+            <dt>
+                HTML
+            </dt>
+            <dd>Language Of The Web</dd>
+         </dl>
+         <br>
+         <br>
+         <br> -->
+         <!-- 
+         br : break line or new line  -->
+
+         <!-- 
+         table
+         table : create table
+         tr : table row
+         th: table header
+         td: table data cell
+         thead : table head
+         tbody: table body
+         tfoot: table foot -->
+         <!-- <table>
+            <caption>Students Mark</caption>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Khazaal</td>
+                    <td>Emad</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Khazaal</td>
+                    <td>Emad</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Khazaal</td>
+                    <td>Emad</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Khazaal</td>
+                    <td>Emad</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Khazaal</td>
+                    <td>Emad</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr> -->
+                    <!-- colspan merage Column -->
+                    <!-- <td colspan="2">Total</td>
+                    <td>500</td>
+                </tr>
+            </tfoot>
+         </table>
+         <br>
+         <br>
+         <br> -->
+         <!-- 
+         span: inline element
+         break Line:
+         Horizontal Rule:
+          -->
+         <!-- <span>Word</span> Word Againt
+         <p>This Is Second Paragraph, <br> test</p>
+         <hr> -->
+         <!-- 
+         hr : block element -->
+         <!-- 
+         Div : King Of element 
+         Div as Container That Contains a Collection Of Elements -->
+         <!-- <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store , Welcome</p>
+         </div>
+        <div class="romantic">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+        </div>
+        <hr>
+        <div class="police">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+        </div>
+        <hr>
+        <div class="fansty">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book Description</p>
+                <span>300$</span>
+            </div>
+        </div> -->
+        <!-- 
+        html entities:
+         -->
+        <!-- <hr>
+        <div>this is my &lt;p&gt; div</div>
+        <br>
+        <hr>
+        <header>Head Of Websites</header>
+        <nav>Link-link-Link</nav>
+        <section>
+            <section></section>
+            <aside></aside>
+        </section> -->
+        <!-- 
+        HTML5 Semantic Tags / Sections -->
+        <!-- <header></header>
+        <nav></nav>
+        <main></main>
+        <article></article>
+        <article></article>
+        <article></article>
+        <footer></footer>
+<hr> -->
+        <!-- 
+            Layout Wuith Div And Classes
+         -->
+            
+         <!-- Audio -->
+          <!-- Q And blockQuote Wbr , button , BDI -->
+           <q>This is Wise Word </q>
+           <blockquote>This is A Block Quote</blockquote>
+           <button>Click Me</button>
+           <div>
+           <wbr>Word Break Opertianti</wbr>
+           </div>
+           <bdi >3 5 bi Directional </bdi>
+
+           <!-- IFrame Pre And code  -->
+            <br>
+            <code>
+                console.log(c);
+            </code>
+            <pre>
+                x = 10;
+                y = 20;
+                console.log(x+y);
+            </pre>
+
+            <!-- <iframe src="test2.html" frameborder="0"
+            width="240" height="320">Test2</iframe> -->
+
+            <!-- Accessibility intro -->
+                        
+    </body>
+</html>
