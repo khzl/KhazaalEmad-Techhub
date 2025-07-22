@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <meta name="Project1test" content="HTML And CSS Only">
 </head>
 <body>
+
     <!-- Div Class Header -->
-    <div class="header">
-        <div class="logo">
-            <img src="Logo/tech hub logo-01.png" alt="logo tech hub" width="200px" height="250px">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="Logo/tech hub logo-01.png">Tech Hub</a>
+            </div>
+            <ul>
+            <li><a href="home.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="whatILearning.html">Learning</a></li>
+            <button><a href="SignIn.html">SignIn</a></button>
+            <button><a href="SignUp.Html">SignUp</a></button>
+            </ul>
         </div>
-        <div class="navigation">
-            <a href="home.html" target="_blank">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+    </nav>
+
     <!-- Div Class Hero Section -->
-     <div class="heroSection">
+     <div class="hero">
+        <div class="contentHero">
         <h1>Welcome To Tech Hub</h1>
         <p>Your Gateway To Technology Learning</p>
-        <!-- <button>Join Tech Hub</button> -->
-        <a href="TechHub.html" class="button" target="_blank">Join Tech Hub</a>
+        <a href="TechHub.html" class="btnJoin">Join Tech Hub</a>
+        </div>
      </div>
+
      <!-- Div Class Content -->
      <div class="content">
 
@@ -53,14 +62,20 @@
             <p>Connect With Tech Enthusiasts</p>
         </div>
         </a>
-
      </div>
      <!-- Div Class Footer -->
       <div class="footer">
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="contact.html">Contact</a>
-        <p>&copy; 2025 Tech Hub</p>
-      </div>
+  <ul class="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="teams.html">Teams</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <p>Created With <i class="fa-solid fa-code"></i> by @KhazaalDev</p>
+  <p>&copy; 2025 Tech Hub</p>
+     </div>
 </body>
 </html>
