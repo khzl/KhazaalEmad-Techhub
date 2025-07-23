@@ -1,0 +1,417 @@
+/* ======================= reset =================== */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body
+{
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ======================= NavBar ======================== */
+.navbar
+{
+    background-color: #0d1117;
+    padding: 1rem 2rem;
+}
+
+.navdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a
+{
+    color: #ffffff;
+    font-size: 1.8rem;;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navdiv ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navdiv ul li a 
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navdiv ul li a:hover
+{
+    color: #00bcd4;
+}
+
+.navdiv button
+{
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navdiv button a 
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navdiv button:hover
+{
+    background-color: #0199aa;
+}
+
+
+/* ====================================== Hero Section ====================== */
+.hero
+{
+    min-height: 100vh;
+    background: 
+        linear-gradient(to right, rgba(0, 188, 212, 0.6), rgba(0, 123, 255, 0.6)), 
+        url('Logo/tech hub logo-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contentHero
+{
+    text-align: center;
+    color: black;
+}
+
+.contentHero h1
+{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contentHero p
+{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contentHero .btnJoin
+{
+    background-color: white;
+    color: #007bff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s,color 0.3s;
+}
+
+.contentHero .btnJoin:hover
+{
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
+
+/* ============================ Content Cards ============================= */
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+}
+
+.card-link
+{
+    text-decoration: none;
+}
+
+.card
+{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card .icon
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h2
+{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card p
+{
+    font-size: 1rem;
+    color: #666;
+}
+
+.card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ================= Footer ===================== */
+
+.footer {
+  width: 100%;
+  background: #00bcd4;
+  padding: 60px 20px 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .social-embeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer .menu li a {
+  font-size: 1.2em;
+  color: #141414;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.footer .menu li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #141414;
+  margin-top: 10px;
+  font-size: 1.1em;
+  opacity: 0.75;
+}
+
+/* .footer
+{
+   position: relative;
+   width: 100%;
+   background: #00bcd4;
+   padding: 60px 20px 30px;
+   color: #fff;
+   text-align: center;
+   overflow: hidden;
+}
+
+.footer .waves
+{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.wave 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url() repeat-x;
+    background-size: cover;
+    opacity: 0.6;
+    animation: animateWave 6s linear infinite;
+    bottom: 0;
+}
+
+#wave1
+{
+    z-index: 1;
+    opacity: 1;
+    animation-delay: 0s;
+}
+
+#wave2
+{
+    z-index: 2;
+    opacity: 0.5;
+    animation-delay: -1s;
+}
+
+#wave3
+{
+    z-index: 3;
+    opacity: 0.3;
+    animation-delay: -2s;
+}
+
+#wave4
+{
+    z-index: 4;
+    opacity: 0.2;
+    animation-delay: -3s;
+}
+
+@keyframes animateWave
+{
+    0%{
+        background-position-x:0 ;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+footer .social-icons,
+footer .menu
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+footer .social-icons li,
+footer .menu li 
+{
+    list-style: none;
+}
+
+footer .social-icons li a i
+{
+    font-size: 2em;
+    color: #141414;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons li a i:hover
+{
+    transform: translateY(-10px);
+}
+
+
+footer .menu li a 
+{
+    font-size:  1.2em;
+    color: #141414;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+footer .menu li a:hover
+{
+    opacity: 1;
+}
+
+footer p
+{
+    position: relative;
+    z-index: 2;
+    color: #141414;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.75;
+} */
+
+/* .footer a
+{
+    color: #303839;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover
+{
+    color: gray;
+}
+
+.footer p 
+{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+} */
+
+
+/* ============================== Responsive ========================= */
+@media (max-width: 768px)
+{
+    .navdiv{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navdiv ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .contentHero h1{
+        font-size: 2.2rem;
+    }
+}
+
