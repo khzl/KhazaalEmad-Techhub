@@ -219,22 +219,9 @@ Submit a Pull Request with a clear message
 👨‍💻 Khazaal Emad Khazaal
 Full-Stack Web Developer | Passionate about building elegant UIs and robust APIs
 🌐 GitHub
-📫 Contact: youremail@example.com
+📫 Contact:
 
 📄 License
 This project is open-source and available under the MIT License.
 
 🧩 “I build, break, and rebuild — because learning is not linear.”
-
-yaml
-Copy
-Edit
-
----
-
-Would you like to:
-- Add live hosted links?
-- Include preview images/screenshots?
-- Create GitHub badges or shields?
-
-Let me know and I can enhance this even further.
