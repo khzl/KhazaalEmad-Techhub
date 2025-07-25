@@ -29,7 +29,7 @@ toLowerCase         || Converts to LowerCase             || "HI*.Lowercase() -> 
 =============================================================================================
 trim()              || Removes Whitespace                || "  Hello  ".trim() -> "hello"
 =============================================================================================
-slice(start,end)    || Extract Part Of The String        || "hello".slice(1,4) -> "ello"
+slice(start,end)    || Extract Part Of The String        || "hello".slice(1,4) -> "ell"
 =============================================================================================
 substring(start,end)|| Similar to slice but no negatives || "hello".substring(1,4) -> "ell"
 =============================================================================================
@@ -55,4 +55,53 @@ endsWith(sub)       || Check End                         || "hello".endsWith("lo
 =======================================================================================================
 */
 
+// Strings immutability
+// strings are immutable - you cannot change individual characters 
 
+let str = "hello";
+str[0] = "H"; // Does Nothings 
+
+// Template literals (Backticks)
+let name1 = "Khazaal";
+let Message1 = `Hello , ${name}`;
+
+// ------------------------------------------------------------------
+// Problems 
+//-------------------------------------------------------------------
+// problem 1 
+
+let str1 = "  javaScript  ";
+console.log(str1.trim().toUpperCase());
+
+// --------------------------------------------------------------------
+// problem 2
+
+let name2 = "Hello";
+console.log(name2.slice(1,4), name2[0],name2.length);
+//-----------------------------------------------------------------------
+// problem 3
+
+let text = "Hello Khazaal Hello";
+console.log(text.replace("Hello","Hi"));
+console.log(text.replaceAll("Hello","Hi"));
+
+// --------------------------------------------------------------------------
+// problem 4
+
+let str4 = "javaScript";
+console.log(str4.includes("Script"), str4.startsWith("java"), str4.endsWith("pt"));
+
+//----------------------------------------------------------------------------------
+// problem 5
+let str5 = "Apple,Banana,Cherry";
+let fruits5 = str5.split(",");
+console.log(fruits5,"Length: " + fruits5.length);
+
+//--------------------------------------------------------------------------------
+// problem 6
+
+let First = "Hello";
+let Second = "World";
+let Combined = `${First} ${Second}`;
+console.log(Combined, Combined.length);
+//---------------------------------------------------------------------------------
