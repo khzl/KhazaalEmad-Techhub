@@ -1,17 +1,27 @@
-function DrawTriangleWithStarUsing2D(Array2D)
+/*
+ 2. Draw a triangle with stars using 2D
+input
+javascriptheight = 5
+Output:
+*
+***
+*****
+*******
+*********
+*/
+
+function DrawTriangleWithStarUsing2D()
 {
-    let result = '';
-    for (let i = 0 ; i < Array2D.length ; i++)
+    let height = 5;
+    for (let row  = 0 ; row < height; row++)
     {
-        result += Array2D[i].join('') + '\n';
+        let stars = '';
+        for (let column = 0; column < 2 * row + 1; column++)
+        {
+            stars += '*';
+        }
+        console.log(stars);
     }
-    return result;
 }
 
-let Array2D = [['*'],
-               ['*','*','*'],
-               ['*','*','*','*','*'],
-               ['*','*','*','*','*','*','*'],
-               ['*','*','*','*','*','*','*','*','*']];
-let DrawTriangle = DrawTriangleWithStarUsing2D(Array2D);
-console.log(DrawTriangle);
+console.log(DrawTriangleWithStarUsing2D());

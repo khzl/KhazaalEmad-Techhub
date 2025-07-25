@@ -1,25 +1,21 @@
-function CountLastWord(str)
+/*
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+A word is a maximal substring consisting of non-space characters only.
+Example 1:
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+Example 2:
+Input:
+s = " fly me to the moon
+Output: 4
+Explanation: The last word is "moon" with length 4.
+*/
+function lengthOfLastWord(str)
 {
-    
-    let i = str.length - 1;
-    while (i >= 0 && str[i] === ' ') {
-        i--;
-    }
-    
-    let end = i;
-    
-    while (i >= 0 && str[i] !== ' ') {
-        i--;
-    }
-    let start = i + 1;
-    
-    let lastWord = '';
-    for (let j = start; j <= end; j++) {
-        lastWord += str[j];
-    }
-    return lastWord;
+   const words = str.trim().split(' ');
+   return words[words.length - 1].length;
 }
 
-let str = "  fly  me   to the moon ";
-let LastWord = CountLastWord(str);
-console.log(LastWord);
+console.log(lengthOfLastWord(" Fly Me To The Moon "));
+console.log(lengthOfLastWord("Hello Khazaal"));
