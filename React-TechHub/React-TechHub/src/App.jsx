@@ -4,6 +4,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import MyImage from './images/download.jpeg'
 import AnotherImage from './images/download-2.jpeg'
+import UserCard from './UserCard'
+import UserLists from './UserLists'
 
 function Welcome()
   {
@@ -153,9 +155,23 @@ function App() {
   //   return () => clearInterval(timer); // Clear 
   // }, []); // Run only One Over Loading
 
+  //---------------------------------------------
+  // const Users = [
+  //   {name: "Khazaal" , email: "Khazaal@gmail.com" , age: 24 , ImageUrl:"https://placehold.co/600x400/png"},
+  //   {name: "Ali" , email: "Ali@gmail.com" , age: 24 , ImageUrl:"https://placehold.co/600x400/png"},
+  //   {name: "Yaser", email: "Yaser@gmail.com" , age: 24 , ImageUrl:"https://placehold.co/600x400/png"}
+  // ];
 
   return (
     <>
+    <hr />
+    <div>
+      <UserLists/>
+      {/* {Users.map((user,index) => (
+        <UserCard key={index} name={user.name} email={user.email}/>
+      ))} */}
+    </div>
+    <hr />
     <Welcome/>
     <Counter/>
     <hr />
