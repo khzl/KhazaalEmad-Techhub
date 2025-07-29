@@ -1,0 +1,52 @@
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+}
+
+.card-link
+{
+    text-decoration: none;
+}
+
+.card
+{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card .icon
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h2
+{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card p
+{
+    font-size: 1rem;
+    color: #666;
+}
+
+.card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}

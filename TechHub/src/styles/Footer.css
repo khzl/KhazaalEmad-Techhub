@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  background: #00bcd4;
+  padding: 0.5px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer .menu li a {
+  font-size: 1.2em;
+  color: #141414;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.footer .menu li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #141414;
+  margin-top: 10px;
+  font-size: 1.1em;
+  opacity: 0.75;
+}

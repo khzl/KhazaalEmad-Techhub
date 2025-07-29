@@ -1,0 +1,51 @@
+.hero
+{
+    min-height: 100vh;
+    background: 
+        linear-gradient(to right, rgba(0, 188, 212, 0.6), rgba(0, 123, 255, 0.6)), 
+        url('../assets/tech\ hub\ logo-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contentHero
+{
+    text-align: center;
+    color: black;
+}
+
+.contentHero h1
+{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contentHero p
+{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contentHero .btnJoin
+{
+    background-color: white;
+    color: #007bff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s,color 0.3s;
+}
+
+.contentHero .btnJoin:hover
+{
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
