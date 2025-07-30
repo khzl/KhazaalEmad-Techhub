@@ -1,4 +1,4 @@
-import { useState , useEffect } from 'react'
+import { useState , useEffect, Profiler } from 'react'
 import './App.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -6,6 +6,7 @@ import MyImage from './images/download.jpeg'
 import AnotherImage from './images/download-2.jpeg'
 import UserCard from './UserCard'
 import UserLists from './UserLists'
+// import { createContext } from 'react'
 
 function Welcome()
   {
@@ -143,6 +144,18 @@ function WelcomeProps(props)
   </div>
   );
 }
+
+// const UserContext = createContext();
+
+function Card(props)
+{
+  return(
+    <div style={{border: '1px solid black', padding: '10px'}}>
+      {props.children}
+    </div>
+  );
+}
+
 function App() {
   //const [count, setCount] = useState(0)
   //const [count, setCount] = useState(12);
@@ -162,8 +175,23 @@ function App() {
   //   {name: "Yaser", email: "Yaser@gmail.com" , age: 24 , ImageUrl:"https://placehold.co/600x400/png"}
   // ];
 
+  // const user = { name: "Khazaal"};
   return (
     <>
+    {/* <UserContext.Provider value={user}>
+      <Profiler/>
+    </UserContext.Provider> */}
+    <hr />
+    <Card>
+      <h2>This Is a Title</h2>
+      <p>This Is Content Inside Card</p>
+    </Card>
+    <Card>
+      <h2>Projects</h2>
+      <p>build-in Real World Projects</p>
+    </Card>
+    <hr />
+    <h1>Khazaal</h1>
     <hr />
     <div>
       <UserLists/>
