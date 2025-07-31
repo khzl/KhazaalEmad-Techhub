@@ -6,7 +6,12 @@ import MyImage from './images/download.jpeg'
 import AnotherImage from './images/download-2.jpeg'
 import UserCard from './UserCard'
 import UserLists from './UserLists'
+import Dashboard from './Dashboard'
+import Posts from './Posts'
 // import { createContext } from 'react'
+import UserContext from './UserContext'
+import Profile from './Profile'
+import Cards from './Cards'
 
 function Welcome()
   {
@@ -156,6 +161,47 @@ function Card(props)
   );
 }
 
+// function WithAuth(WrappedComponent) {
+//   return function AuthenticatedComponent(props) {
+//     const IsLoggin = props.IsLoggin;
+
+//     if (!IsLoggin) {
+//       return <h3>You Must Be Logged In To View This Page.</h3>;
+//     }
+//     return <WrappedComponent {...props} />;
+//   };
+// }
+
+function Parent({theme})
+{
+  return <Child theme={theme}/>;
+}
+
+function Child({theme})
+{
+  return <GrandChild theme={theme}/>;
+}
+
+function GrandChild({theme})
+{
+  return <h3>Theme Is {theme}</h3>;
+}
+
+function ParentLang({lang})
+{
+  return <ChildLang lang={lang}/>;
+}
+
+function ChildLang({lang})
+{
+  return <GrandChildLang lang={lang}/>;
+}
+
+function GrandChildLang({lang})
+{
+  return <h3>lang Is {lang}</h3>;
+}
+
 function App() {
   //const [count, setCount] = useState(0)
   //const [count, setCount] = useState(12);
@@ -176,11 +222,35 @@ function App() {
   // ];
 
   // const user = { name: "Khazaal"};
+  // // const ProtectedDashboard = WithAuth(Dashboard);
+
+  const theme = "dark";
+  const lang = "eng";
+  //-------------------------
+  const user = {name: "Khazaal" , email: "Khazaal@gmail.com"};
   return (
     <>
+    <hr />
+
+    <hr />
+    <p>Khazaal Developer</p>
+    <hr />
+    <UserContext.Provider value={user}>
+      <Profile/>
+    </UserContext.Provider>
+    <hr />
     {/* <UserContext.Provider value={user}>
       <Profiler/>
     </UserContext.Provider> */}
+    <hr />
+    <Posts/>
+    <hr />
+    <Parent theme={theme}/>
+    <ParentLang lang={lang}/>
+    <hr />
+    <h2>Khazaal</h2>
+    <hr />
+    <h2>Khazaal</h2>
     <hr />
     <Card>
       <h2>This Is a Title</h2>
