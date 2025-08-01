@@ -12,6 +12,10 @@ import Posts from './Posts'
 import UserContext from './UserContext'
 import Profile from './Profile'
 import Cards from './Cards'
+import ListUser from './ListUser'
+import LoginStatus from './LoginStatus'
+import MyUIComponent from './MyUIComponent'
+
 
 function Welcome()
   {
@@ -231,7 +235,11 @@ function App() {
   return (
     <>
     <hr />
-
+    <MyUIComponent/>
+    <hr />
+    <LoginStatus/>
+    <hr />
+    <ListUser/>
     <hr />
     <p>Khazaal Developer</p>
     <hr />
