@@ -15,6 +15,7 @@ import Cards from './Cards'
 import ListUser from './ListUser'
 import LoginStatus from './LoginStatus'
 import MyUIComponent from './MyUIComponent'
+import Login from './Login';
 
 
 function Welcome()
@@ -235,6 +236,9 @@ function App() {
   return (
     <>
     <hr />
+    <Login/>
+    <hr />
+
     <MyUIComponent/>
     <hr />
     <LoginStatus/>

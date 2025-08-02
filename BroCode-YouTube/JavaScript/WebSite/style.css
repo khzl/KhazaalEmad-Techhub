@@ -1,0 +1,9 @@
+header h2 {
+    color: blue;
+    text-align: center;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: azure;
+}
