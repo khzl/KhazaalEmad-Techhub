@@ -70,7 +70,7 @@ const server = http.createServer((request,response) => {
             const index = items.findIndex((Item) => Item.id === id);
             if (index === -1)
             {
-                response.writeHead(404, {"content-type": "application.json"});
+                response.writeHead(404, {"content-type": "application/json"});
                 return response.end(JSON.stringify({error: "Item Not Found"}));
             }
 
@@ -97,7 +97,7 @@ const server = http.createServer((request,response) => {
          
          if (index === -1)
          {
-            response.writeHead(404, {"content-type": "application.json"});
+            response.writeHead(404, {"content-type": "application/json"});
             return response.end(JSON.stringify({error: "Item Not Found"}));
          }
 
@@ -112,7 +112,7 @@ const server = http.createServer((request,response) => {
         response.writeHead(404, {"content-type": "application/json"});
         response.end(JSON.stringify({error: "Endpoint Not Found"}));
     }
-    
+
 });
 
 server.listen(3000 , () => {
