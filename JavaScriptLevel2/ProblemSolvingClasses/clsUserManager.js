@@ -77,7 +77,7 @@ class clsUserManager {
 }
 
 
-let UserManager1 = new clsUserManager();
+/* let UserManager1 = new clsUserManager();
 UserManager1.CreateNewUser(1,"Omer","Omer@gmail.com");
 UserManager1.CreateNewUser(2,"Ali","Ali@gmail.com");
 UserManager1.CreateNewUser(3,"Khazaal","Khazaal@gmail.com");
@@ -88,6 +88,8 @@ console.log(UserManager1.GetUserByID());
 console.log(UserManager1.UpdateUsers(2,"Hiba","Hiba@gmail.com"));
 console.log(UserManager1.UpdateUsers("Hiba","Hiba@gmail.com"));
 console.log(UserManager1.DeleteUsers(2));
-console.log(UserManager1.DeleteUsers(5));
+console.log(UserManager1.DeleteUsers(5)); */
+
+module.exports = new clsUserManager();
 
 

@@ -76,12 +76,12 @@ class clsCategoryManager{
     // Category Exists
     CategoryExists(categoryId)
     {
-        return !!this.categories[categoryId];
+       return !!this.categories[categoryId];
     }
 
 }
 
-let category1 = new clsCategoryManager();
+/* let category1 = new clsCategoryManager();
 category1.CreateNewCategory(1,"Laptop","this is laptop description");
 category1.CreateNewCategory(2,"MAC","this is mac description");
 category1.CreateNewCategory(3,"TAB","this is tab description");
@@ -92,7 +92,7 @@ console.log(category1.GetCategoryByID());
 console.log(category1.UpdateCategories(2,"Laptop","this is description"));
 console.log(category1.UpdateCategories("Laptop","this is description"));
 console.log(category1.DeleteCategory(2));
-console.log(category1.DeleteCategory(5));
+console.log(category1.DeleteCategory(5)); */
 
-module.export = clsCategoryManager;
+module.exports = new clsCategoryManager();
 //export default clsCategoryManager;
